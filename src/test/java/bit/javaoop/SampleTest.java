@@ -13,7 +13,7 @@ class SampleTest {
     }
 
     @Test
-    void shouldEvalueateToTrue() {
+    void shouldEvaluateToTrue() {
         //given
         boolean someVariable = false;
         //when
