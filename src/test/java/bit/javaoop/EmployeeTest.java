@@ -2,6 +2,7 @@ package bit.javaoop;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class EmployeeTest {
@@ -14,5 +15,13 @@ class EmployeeTest {
         boolean result = highSalaryEmployee.isSatisfied();
         //then
         assertTrue(result);
+    }
+
+    @Test
+
+    void shouldBeDisgusted(){
+        Employee poorGuy = new Employee(("Biedak"),1000);
+        boolean result = poorGuy.isSatisfied();
+        assertFalse(result);
     }
 }
