@@ -24,16 +24,16 @@ public class Company {
 
     @Override
     public String toString() {
-        String result="\n\n\n";
-        result+="               Company under name: " + this.getName() + "\n";
-        result+="Led by CEO: "+ this.getExecutive().getName()+ "\n";
-        for(Manager x: this.getExecutive().getManagers()){
-            result+="   Hiring a manager: " + x.getName()+ "\n   Who supervises employees: \n";
+        StringBuilder result = new StringBuilder("");
+        result.append("\n\n\n\t\t\tCompany under name: " + this.getName() + "\n");
+        result.append("Led by CEO: "+ this.getExecutive().getName()+ "\n");
+        for(AbstractManager x: this.getExecutive().getManagers()){
+            result.append("Hiring a manager: " + x.getName()+ "\n   Who supervises employees: \n");
                 for(Employee y: x.getEmployees()){
-                    result+="       " + y.getName()+"\n";
+                    result.append("\t\t" + y.getName()+"\n");
                 }
         }
 
-        return result;
+        return result.toString();
     }
 }

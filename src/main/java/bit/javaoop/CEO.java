@@ -1,26 +1,25 @@
 package bit.javaoop;
 
-import javax.lang.model.type.NullType;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CEO extends AbstractEmployee{
 
-    private List<Manager> managers;
+    private List<AbstractManager> managers;
 
 
     public CEO(String name, double salary) {
         super(name, salary);
-        this.managers = new ArrayList<Manager>();
+        this.managers = new ArrayList<AbstractManager>();
     }
 
-    public List<Manager> getManagers() {
+    public List<AbstractManager> getManagers() {
         return managers;
     }
 
-    public Manager getManagerByName(String name){
+    public AbstractManager getManagerByName(String name){
         FixedEmployeeNumberManager none=new FixedEmployeeNumberManager("None",0,0);
-        for(Manager x: managers){
+        for(AbstractManager x: managers){
             if(x.getName()==name) return x;
         }
         return none;

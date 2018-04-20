@@ -1,6 +1,6 @@
 package bit.javaoop;
 
-public class FixedBudgetManager extends Manager {
+public class FixedBudgetManager extends AbstractManager {
     private double budget;
     private double employeesSalary;
 

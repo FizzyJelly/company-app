@@ -4,23 +4,22 @@ import javax.lang.model.type.NullType;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Manager extends AbstractEmployee {
+public abstract class AbstractManager extends AbstractEmployee {
 
     protected List<Employee> employees;
 
 
 
-    public Manager(String name, double salary) {
+    public AbstractManager(String name, double salary) {
         super(name, salary);
         this.employees=new ArrayList<Employee>();
     }
 
     public Employee getEmployeeByName(String name){
-        Employee none =new Employee("None",0);
         for(Employee x: employees){
             if(x.getName()==name) return x;
         }
-        return none;
+        return null;
     }
 
     public List<Employee> getEmployees() {
