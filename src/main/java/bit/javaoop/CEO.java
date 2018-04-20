@@ -9,7 +9,7 @@ public class CEO extends AbstractEmployee{
 
 
     public CEO(String name, double salary) {
-        super(name, salary);
+        super(name, salary, new HolidayBonusSalary());
         this.managers = new ArrayList<AbstractManager>();
     }
 

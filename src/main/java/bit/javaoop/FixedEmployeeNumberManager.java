@@ -6,7 +6,7 @@ public class FixedEmployeeNumberManager extends AbstractManager {
     private double hiredEmployess;
 
     public FixedEmployeeNumberManager(String name, double salary, double employeesLimit) {
-        super(name, salary);
+        super(name, salary,new ClassicalTaxTheft());
         this.employeesLimit = employeesLimit;
         this.hiredEmployess = 0;
     }

@@ -6,7 +6,7 @@ public class FixedBudgetManager extends AbstractManager {
 
 
     public FixedBudgetManager(String name, double salary, double budget) {
-        super(name, salary);
+        super(name, salary,new ClassicalTaxTheft());
         this.budget = budget;
         this.employeesSalary = 0;
     }

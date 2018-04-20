@@ -10,8 +10,8 @@ public abstract class AbstractManager extends AbstractEmployee {
 
 
 
-    public AbstractManager(String name, double salary) {
-        super(name, salary);
+    public AbstractManager(String name, double salary,SalaryCalculator cal) {
+        super(name, salary, cal);
         this.employees=new ArrayList<Employee>();
     }
 

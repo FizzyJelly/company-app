@@ -20,6 +20,6 @@ public abstract class AbstractEmployee  {
 
 
     public double getSalary() {
-        return cal.getActualSalary();
+        return cal.getActualSalary(salary);
     }
 }
