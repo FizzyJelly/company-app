@@ -17,7 +17,7 @@ public class FixedEmployeeNumberManager extends AbstractManager {
     }
 
     @Override
-    public void Hire(String name, double salary) {
+    public void hire(String name, double salary) {
         if(this.canHire(salary)){
             employees.add(new Employee(name, salary));
             hiredEmployess++;

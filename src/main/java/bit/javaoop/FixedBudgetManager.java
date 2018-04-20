@@ -24,7 +24,7 @@ public class FixedBudgetManager extends AbstractManager {
     }
 
     @Override
-    public void Hire(String name, double salary) { //yet to be written
+    public void hire(String name, double salary) { //yet to be written
         if(this.canHire(salary)){
             employees.add(new Employee(name,salary));
             employeesSalary+=salary;

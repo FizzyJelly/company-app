@@ -28,6 +28,6 @@ public abstract class AbstractManager extends AbstractEmployee {
 
     public abstract boolean canHire(double salary);
 
-    public abstract void Hire(String name, double salary);
+    public abstract void hire(String name, double salary);
 
 }

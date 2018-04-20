@@ -18,14 +18,13 @@ public class CEO extends AbstractEmployee{
     }
 
     public AbstractManager getManagerByName(String name){
-        FixedEmployeeNumberManager none=new FixedEmployeeNumberManager("None",0,0);
         for(AbstractManager x: managers){
             if(x.getName()==name) return x;
         }
-        return none;
+        return null;
     }
 
-    public void HireManager(String name, double salary, String type){
+    public void hireManager(String name, double salary, String type){
         if(type=="FixedBudget"){
             managers.add(new FixedBudgetManager(name,salary,150_000));
             System.out.println(name+" was successfully hired as a new fixed budget manager!");
