@@ -1,5 +1,6 @@
 package bit.javaoop;
 
+import bit.javaoop.EmployeeTypes.Employee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -19,7 +20,7 @@ class EmployeeTest {
 
     @Test
 
-    void shouldBeDisgusted(){
+    void shouldNotBeSatisfied(){
         Employee poorGuy = new Employee(("Biedak"),1000);
         boolean result = poorGuy.isSatisfied();
         assertFalse(result);

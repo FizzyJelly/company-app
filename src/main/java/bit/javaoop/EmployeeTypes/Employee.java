@@ -1,10 +1,12 @@
-package bit.javaoop;
+package bit.javaoop.EmployeeTypes;
+
+import bit.javaoop.Payments.NoInsurancePayment;
 
 public class Employee extends AbstractEmployee {
 
 
     public Employee(String name, double salary) {
-        super(name, salary,new NoInsurancePayment());
+        super(name, salary, new NoInsurancePayment());
     }
 
     @Override

@@ -1,6 +1,8 @@
-package bit.javaoop;
+package bit.javaoop.EmployeeTypes;
 
-public abstract class AbstractEmployee  {
+import bit.javaoop.Payments.SalaryCalculator;
+
+public abstract class AbstractEmployee {
     private String name;
     private double salary;
     private SalaryCalculator cal;
@@ -16,7 +18,6 @@ public abstract class AbstractEmployee  {
     public String getName() {
         return name;
     }
-
 
 
     public double getSalary() {

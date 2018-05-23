@@ -1,11 +1,11 @@
-package bit.javaoop;
+package bit.javaoop.Payments;
 
-public class ClassicalTaxTheft implements SalaryCalculator{
+public class ClassicalTax implements SalaryCalculator {
 
     //Regular salary calculator with no special benefits, just huge tax
 
     @Override
     public double getActualSalary(double salary) {
-        return salary*0.66;
+        return salary * 0.66;
     }
 }

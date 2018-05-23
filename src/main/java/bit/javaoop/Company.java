@@ -1,5 +1,9 @@
 package bit.javaoop;
 
+import bit.javaoop.EmployeeTypes.AbstractManager;
+import bit.javaoop.EmployeeTypes.CEO;
+import bit.javaoop.EmployeeTypes.Employee;
+
 public class Company {
     private String name;
     private CEO executive;
@@ -26,12 +30,12 @@ public class Company {
     public String toString() {
         StringBuilder result = new StringBuilder("");
         result.append("\n\n\n\t\t\tCompany under name: " + this.getName() + "\n");
-        result.append("Led by CEO: "+ this.getExecutive().getName()+ "\n");
-        for(AbstractManager x: this.getExecutive().getManagers()){
-            result.append("Hiring a manager: " + x.getName()+ "\n   Who supervises employees: \n");
-                for(Employee y: x.getEmployees()){
-                    result.append("\t\t" + y.getName()+"\n");
-                }
+        result.append("Led by CEO: " + this.getExecutive().getName() + "\n");
+        for (AbstractManager x : this.getExecutive().getManagers()) {
+            result.append("Hiring a manager: " + x.getName() + "\n   Who supervises employees: \n");
+            for (Employee y : x.getEmployees()) {
+                result.append("\t\t" + y.getName() + "\n");
+            }
         }
 
         return result.toString();

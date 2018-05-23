@@ -1,5 +1,8 @@
 package bit.javaoop;
 
+import bit.javaoop.EmployeeTypes.CEO;
+import bit.javaoop.EmployeeTypes.Employee;
+import bit.javaoop.EmployeeTypes.FixedBudgetManager;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
